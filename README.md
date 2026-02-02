@@ -2,15 +2,18 @@ DATA SET is from KAGGLE titled "HEART DISEASE"
 
 TO ACCESS DATA SET FROM INTERNET. FOLLOW THESE STEPS
 
-# Install dependencies as needed:
-# pip install kagglehub[pandas-datasets]
+#Install dependencies as needed:
+
+pip install kagglehub[pandas-datasets]
 import kagglehub
 from kagglehub import KaggleDatasetAdapter
 
 # Set the path to the file you'd like to load
+
 file_path = ""
 
 # Load the latest version
+
 df = kagglehub.load_dataset(
   KaggleDatasetAdapter.PANDAS,
   "neurocipher/heartdisease",
